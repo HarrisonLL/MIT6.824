@@ -345,7 +345,7 @@ func (rf *Raft) broadcastVoteRequest() {
 	}
 }
 
-// === Snapshot ===
+// === Install Snapshot for slow follower ===
 type InstallSnapshotArgs struct {
 	Term              int
 	LeaderId          int
